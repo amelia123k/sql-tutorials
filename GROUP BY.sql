@@ -17,5 +17,9 @@ SELECT * FROM
 employee_demographics
 ORDER BY  gender ,age asc ;
 
+SELECT * FROM 
+employee_demographics
+ORDER BY  gender ,age desc ;
+
 
 
