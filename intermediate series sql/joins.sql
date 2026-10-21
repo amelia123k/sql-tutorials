@@ -34,6 +34,15 @@ emp2.last_name as last_name_emp
 
  from employee_salary emp1
 join employee_salary emp2
-on emp1.employee_id +1 =emp2.employee_id
+on emp1.employee_id +1 =emp2.employee_id;
 
+# joining multiple tables 
+
+select * from employee_demographics
+inner join  employee_salary
+on employee_demographics.employee_id =  employee_salary.employee_id
+inner join parks_departments
+on employee_salary.dept_id =parks_departments.department_id;
+
+select * from parks_departments;
 
